@@ -1,0 +1,46 @@
+﻿@model sendingmails.Models.mailClass
+
+@{
+    ViewBag.Title = "Sending mail to customer";
+}
+<center>
+    <h2>Sending Mial to User</h2>
+    <hr/>
+    <hr/>
+    @using (Html.BeginForm("Index", "Mail",FormMethod.Post,new {enctype ="multipart/form-data"})) {
+        <table border="1">
+            <tr>
+                <td>To</td>
+                <td>@Html.TextBoxFor(Model => Model.To)</td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td>@Html.TextBoxFor(Model => Model.Subject)</td>
+            </tr>
+            <tr>
+                <td>Body</td>
+                <td>@Html.TextAreaFor(Model => Model.Body,new {rows="10",cols="15"})</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="send mail"/>
+                </td>
+            </tr>
+
+        </table>
+        <h2>@ViewBag.result</h2> 
+
+    }
+
+
+
+
+
+
+
+
+</center>
+
+<h2>Index</h2>
+

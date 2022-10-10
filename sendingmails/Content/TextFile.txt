@@ -1,1 +1,11 @@
 ﻿C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\
+----------------------------------------------------------
+--creating a table for manager details
+CREATE SCHEMA identit ;
+GO
+CREATE SEQUENCE identit.SORT_ID
+    START WITH 587
+    INCREMENT BY 1 ;
+GO
+create table Manager_Details(sno int identity(1,1),ManagerId int not null  DEFAULT (NEXT VALUE FOR identit.SORT_ID),ManagerName varchar(50),Salary decimal(6,2),HireDate date,DeptId int,Pancard varchar(10),State varchar(50),District varchar(40),City varchar(50),Pincode int,Qualification varchar(50),Photo varbinary(5000),Gender varchar(6),DOB date,status bit)
+---------------------------------------------------------------

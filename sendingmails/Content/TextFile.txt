@@ -8,4 +8,5 @@ CREATE SEQUENCE identit.SORT_ID
     INCREMENT BY 1 ;
 GO
 create table Manager_Details(sno int identity(1,1),ManagerId int not null  DEFAULT (NEXT VALUE FOR identit.SORT_ID),ManagerName varchar(50),Salary decimal(6,2),HireDate date,DeptId int,Pancard varchar(10),State varchar(50),District varchar(40),City varchar(50),Pincode int,Qualification varchar(50),Photo varbinary(5000),Gender varchar(6),DOB date,status bit)
+--insert into Manager_Details (ManagerName,Salary,HireDate,DeptId,Pancard,State,District,City,Pincode,Qualification,Photo,Gender,DOB)values ('ManagerName',12.2,GETDATE(),1,1111,'wer','sdf','sdf',123,'sdfg',null,'e',getdate())
 ---------------------------------------------------------------

@@ -1,5 +1,5 @@
 ﻿C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\
-----------------------------------------------------------
+---------------------------------------------------------------
 --creating a table for manager details
 CREATE SCHEMA identit ;
 GO

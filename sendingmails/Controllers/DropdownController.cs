@@ -13,7 +13,7 @@ namespace sendingmails.Controllers
         MVCEntities1 DB = new MVCEntities1();
         public ActionResult Index()
         {
-            List<m_district_test> distList = DB.m_district_test.ToList();
+            List<m_district_test> distList = DB.m_district.ToList();
             ViewBag.Districts=new SelectList(distList,"sno","District");
             return View();
         }

@@ -25,6 +25,6 @@ namespace sendingmails.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<m_district_test> m_district_test { get; set; }
+        public virtual DbSet<m_district_test> m_district { get; set; }
     }
 }

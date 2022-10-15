@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MVCModelStoreContainer" CdmEntityContainer="MVCEntities1">
+    <EntitySetMapping Name="m_district_test">
+      <EntityTypeMapping TypeName="MVCModel.m_district_test">
+        <MappingFragment StoreEntitySet="m_district_test">
+          <ScalarProperty Name="sno" ColumnName="sno" />
+          <ScalarProperty Name="District" ColumnName="District" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

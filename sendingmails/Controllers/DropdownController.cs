@@ -34,7 +34,7 @@ namespace sendingmails.Controllers
             ViewBag.city = list;
             
             return View();
-        }
+        }//https://youtu.be/_l_p7MOqRho
         public ActionResult connection(string qry)
         {
             SqlConnection con = new SqlConnection(conn1);
